@@ -1,0 +1,8 @@
+# Ignorar archivo vendor en Composer
+vendor/*
+
+# Ignorar Configuracion de la base de datos
+config/*
+
+# Ignorar el archivo composer.lock
+composer.lock
