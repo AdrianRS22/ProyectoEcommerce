@@ -171,7 +171,7 @@
     	<!-- /*=============================================
 			##### Breadcumb Area Start #####
 		=============================================*/ -->
-    <br><br><br>
+    
     <div class="breadcumb_area bg-img" style="background-image: url(assets/img/bg-img/breadcumb2.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
