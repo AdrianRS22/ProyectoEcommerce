@@ -18,7 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #fffefa;
   margin-top: 85px; }
   @media only screen and (max-width: 767px) {
     body {
@@ -289,6 +289,7 @@ img {
         height: 40px; } }
   .header_area .classynav ul li a {
     font-size: 16px;
+
     color: #787878; }
     .header_area .classynav ul li a:hover {
       color: #000000; }
@@ -310,7 +311,7 @@ img {
         border-left: none; } }
     .header_area .search-area form input {
       border: none;
-      background-color: #ffffff;
+      background-color: #495057;
       width: 200px;
       height: 85px;
       padding: 0 15px 0 60px;
@@ -451,7 +452,7 @@ img {
     border-left: 1px solid #ebebeb;
     height: 85px;
     line-height: 80px;
-    background-color: #f5f7f9; }
+    background-color: ##495057; }
     @media only screen and (max-width: 767px) {
       .right-side-cart-area .cart-button a {
         width: 50px;
@@ -1139,7 +1140,7 @@ img {
   height: 140px; }
   .breadcumb_area:after {
     background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     left: 0;

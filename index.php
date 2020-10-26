@@ -29,12 +29,12 @@
 		<!-- /*=============================================
 			##### Header Area Start #####
 		=============================================*/ -->
-    <header class="header_area">
+    <header class="header_area" >
         <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
             <!-- Classy Menu -->
             <nav class="classy-navbar" id="essenceNav">
                 <!-- Logo -->
-                <a class="nav-brand" href="index.php"><img src="assets/img/core-img/logo.png" alt=""></a>
+                <a class="nav-brand" href="index.php"><img src="assets/img/core-img/arenalmarket.png" style="width: 80px; height: 80px;" alt=""></a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -46,11 +46,11 @@
                         <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                     </div>
                     <!-- Nav Start -->
-                    <div class="classynav">
+                    <div class="classynav" >
                         <ul>
-                            <li><a href="index.php">Shop</a></li>
-                            <li><a href="checkout.php">Checkout</a></li>
-                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="index.php" >Shop</a></li>
+                            <li><a href="checkout.php" >Checkout</a></li>
+                            <li><a href="contact.php" >Contact</a></li>
                         </ul>
                     </div>
                     <!-- Nav End -->
@@ -60,9 +60,9 @@
             <!-- Header Meta Data -->
             <div class="header-meta d-flex clearfix justify-content-end">
                 <!-- Search Area -->
-                <div class="search-area">
+                <div class="search-area" >
                     <form action="#" method="post">
-                        <input type="search" name="search" id="headerSearch" placeholder="Type for search">
+                        <input style="background-color: #495057; color: #fff;" type="search" name="search" id="headerSearch" placeholder="Type for search">
                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
                 </div>
@@ -93,7 +93,7 @@
 
         <!-- Cart Button -->
         <div class="cart-button">
-            <a href="#" id="rightSideCart"><img src="assets/img/core-img/bag.svg" alt=""> <span>3</span></a>
+            <a style="background-color: #495057;" href="#" id="rightSideCart"><img src="assets/img/core-img/bag.svg" alt=""> <span>3</span></a>
         </div>
 
         <div class="cart-content d-flex">
@@ -172,7 +172,7 @@
 			##### Breadcumb Area Start #####
 		=============================================*/ -->
     
-    <div class="breadcumb_area bg-img" style="background-image: url(assets/img/bg-img/breadcumb2.jpg);">
+    <div class="breadcumb_area bg-img" style="background-image: url(assets/img/bg-img/vestidos2.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">

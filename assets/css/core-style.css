@@ -18,7 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #fffefa;
   margin-top: 85px; }
   @media only screen and (max-width: 767px) {
     body {
@@ -289,7 +289,7 @@ img {
         height: 40px; } }
   .header_area .classynav ul li a {
     font-size: 16px;
-    color: #787878; }
+    color: #fff; }
     .header_area .classynav ul li a:hover {
       color: #000000; }
   .header_area .classynav ul li .megamenu li a,
@@ -1139,7 +1139,7 @@ img {
   height: 140px; }
   .breadcumb_area:after {
     background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     left: 0;
