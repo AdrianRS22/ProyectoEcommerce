@@ -1,0 +1,131 @@
+@font-face{
+    font-family: "Synemono";
+    src: url("fonts/SyneMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    font-family: "Synemono";
+}
+
+ul li, ol li{
+    list-style: none;
+}
+
+body{
+    background: url("../img/fondo.png");
+}
+
+.bg-darkblue{
+    background-color: #1A4266 !important;
+}
+
+.colorDarkBlue{
+    color: #1A4266 !important;
+}
+
+.colorMarino{
+    color: #298F9C !important;
+}
+
+#header li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#logo{
+    text-shadow: 2px 1px 3px #ccc;
+    animation: animateLogo 2s linear;
+}
+
+#logo:hover{
+    text-shadow: 0px 2px 1px #298F9C, 0px 0px 4px #00B7C5;
+}
+
+@keyframes animateLogo{
+    0%{
+        transform: translateX(-600%) scale(1,1);
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+    }
+}
+
+#contenedor_principal{
+    min-height: 800px;
+}
+
+.container_sombreado{
+    box-shadow: 0px 0px 15px black;
+    background: rgba(255,255,255, 0.9);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#detalle_producto{
+    min-height: 500px;
+}
+
+.widget .categories-menu li > a {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: block;
+    color: #444;
+}
+
+.widget .categories-menu .sub-menu li > a {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 300;
+    color: #787878;
+}
+
+.widget .categories-menu .sub-menu {
+    margin-left: 15px;
+    margin-bottom: 15px; 
+}
+
+#contenido-productos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.producto{
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0px 20px 25px 20px;
+}
+
+.producto img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrap{
+    height: 180px;
+}
+
+.productdetails_button{
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media(max-width: 409px){
+    #logo{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 333px){
+    #logo{
+        font-size: 1em;
+    }
+}
