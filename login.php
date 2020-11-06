@@ -34,20 +34,17 @@
                                 <h3 class="mb-0">Login</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
-                                    method="POST">
+                                <form class="form" role="form" autocomplete="off" id="formLogin">
                                     <div class="form-group">
-                                        <label for="uname1">Correo</label>
-                                        <input type="email" class="form-control form-control-lg rounded-0" name="uname1"
-                                            id="uname1" required="">
-
+                                        <label for="correo">Correo</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0" id="correo_login" name="correo">
                                     </div>
+
                                     <div class="form-group">
-                                        <label>Contraseña</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="">
-
+                                        <label for="clave">Contraseña</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" id="clave_login" name="clave">
                                     </div>
+
                                     <div>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('register-form-link');"
@@ -58,8 +55,7 @@
                                                 class="forgot-form-link">Olvidé mi contraseña</a>
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-success btn-lg float-right"
-                                        id="btnLogin">Login</button>
+                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
                                 </form>
                             </div>
                         </div>
@@ -151,6 +147,7 @@
     </div>
 
     <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/parsley.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/pages/login.js"></script>
 </body>
