@@ -20,6 +20,7 @@ body{
     background: url("../img/fondo.png");
 }
 
+
 .bg-darkblue{
     background-color: #1A4266 !important;
 }
@@ -128,4 +129,9 @@ body{
     #logo{
         font-size: 1em;
     }
+}
+
+.imagen_login {
+    width: 400px;
+    height: auto;
 }
