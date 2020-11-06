@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,19 +31,19 @@
                         <!-- form card login -->
                         <div class="card rounded-0" id="login-form">
                             <div class="card-header">
-                                <h3 class="mb-0">User Login</h3>
+                                <h3 class="mb-0">Login</h3>
                             </div>
                             <div class="card-body">
                                 <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
                                     method="POST">
                                     <div class="form-group">
-                                        <label for="uname1">Username</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
+                                        <label for="uname1">Correo</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0" name="uname1"
                                             id="uname1" required="">
 
                                     </div>
                                     <div class="form-group">
-                                        <label>Password</label>
+                                        <label>Contraseña</label>
                                         <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
                                             required="">
 
@@ -51,11 +51,11 @@
                                     <div>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('register-form-link');"
-                                                class="register-form-link">Register</a>
+                                                class="register-form-link">Registrarse</a>
                                         </label>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('forgot-form-link');"
-                                                class="forgot-form-link">Forgot Password</a>
+                                                class="forgot-form-link">Olvidé mi contraseña</a>
                                         </label>
                                     </div>
                                     <button type="submit" class="btn btn-success btn-lg float-right"
@@ -74,44 +74,40 @@
                             <div class="card-body">
                                 <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
                                     method="POST">
-                                    <div class="form-group">
-                                        <label for="uname1">Username</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
-                                            id="uname1" required="">
 
-                                    </div>
                                     <div class="form-group">
-                                        <label for="uname1">Name</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
-                                            id="uname1" required="">
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="" autocomplete="new-password">
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="" autocomplete="new-password">
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label>E-mail:</label>
+                                        <label>Correo</label>
                                         <input type="email" class="form-control form-control-lg rounded-0" id="pwd1"
                                             required="" autocomplete="new-password">
-
                                     </div>
+
+                                    <div class="form-group">
+                                        <label for="uname1">Nombre</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
+                                            id="uname1" required="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="uname1">Apellidos</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
+                                            id="uname1" required="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Contraseña</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
+                                            required="" autocomplete="new-password">
+                                    </div>
+
                                     <div>
                                         <label class="custom-control custom-checkbox">
-                                            I have an account. <a href="javascript:void('register-form-load');"
+                                            Ya tengo una cuenta. <a href="javascript:void('register-form-load');"
                                                 class="login-form-link">Login.</a>
                                         </label>
                                     </div>
+
                                     <button type="submit" class="btn btn-success btn-lg float-right"
-                                        id="btnLogin">Register</button>
+                                        id="btnLogin">Registrar</button>
                                 </form>
                             </div>
                         </div>
@@ -121,13 +117,13 @@
                         <!-- form card forgot -->
                         <div class="card rounded-0" id="forgot-form">
                             <div class="card-header">
-                                <h3 class="mb-0">Reset Password</h3>
+                                <h3 class="mb-0">Resetear contraseña</h3>
                             </div>
                             <div class="card-body">
                                 <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
                                     method="POST">
                                     <div class="form-group">
-                                        <label>E-mail</label>
+                                        <label>Correo</label>
                                         <input type="email" class="form-control form-control-lg rounded-0" id="pwd1"
                                             required="" autocomplete="new-password">
 
@@ -135,15 +131,15 @@
                                     <div>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('register-form-link');"
-                                                class="register-form-link">Register</a>
+                                                class="register-form-link">Registrarse</a>
                                         </label>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('login-form-link');"
-                                                class="login-form-link">Login</a>
+                                                class="login-form-link">Loguearse</a>
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Reset
-                                        Password</button>
+                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">
+                                        Resetear contraseña</button>
                                 </form>
                             </div>
                         </div>
