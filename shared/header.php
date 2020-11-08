@@ -1,6 +1,5 @@
-<?php
+<?php require_once 'conexion.php'; ?>
 
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -50,9 +49,22 @@
                                 <a class="dropdown-item" href="#">Reportes</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.php">Iniciar Sesión</a>
+                        <?php if (isset($_SESSION['usuario'])): ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="UsuarioDropDown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <?='Bienvenido, ' . $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellidos']?>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="UsuarioDropDown">
+                                <a class="dropdown-item" href="/perfil.php">Perfil</a>
+                                <a class="dropdown-item" href="/logout.php">Log out</a>
+                            </div>
                         </li>
+                        <?php else: ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login.php">Iniciar Sesión</a>
+                        </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>

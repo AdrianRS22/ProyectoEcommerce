@@ -18,14 +18,6 @@ $(document).ready(function () {
         $("#login-form").slideUp(0);
         $("#forgot-form").fadeIn(300);
     });
-    
-    $("#formLogin").parsley({
-        errorClass: 'is-invalid text-danger',
-        successClass: 'is-valid',
-        errorsWrapper: '<span class="form-text text-danger"></span>',
-        errorTemplate: '<span></span>',
-        trigger: 'change'
-    });
 
     $("#correo_login").parsley({
         required: true,
@@ -35,24 +27,38 @@ $(document).ready(function () {
 
     $("#clave_login").parsley({
         required: true,
-        minlength: 6,
-        requiredMessage: "La contraseña es requerida",
-        minlengthMessage: "La contraseña debe tener más de 5 caracteres"
+        requiredMessage: "La contraseña es requerida"
     });
 
     $("#formLogin").on('submit', function (e) {
         e.preventDefault();
 
         var form = $(this);
-        if(form.parsley().isValid()){
+        if (form.parsley().isValid()) {
             var datos = JSON.parse(JSON.stringify($(form).serializeArray()));
 
             $.ajax({
                 type: "POST",
-                url: "/scripts/usuarios/get_usuario.php",
+                url: "/scripts/obtener_usuario.php",
                 data: datos,
                 success: function (response) {
-                    console.log(response);
+
+                    let decodedResponse = jQuery.parseJSON(response);
+
+                    if (decodedResponse.encontrado) {
+
+                        if(decodedResponse.matchClave){
+                            $("#alertaLogin").addClass("d-none");
+                            window.location.href = "../../index.php";
+                        }else{
+                            $("#alertaLogin").removeClass("d-none").addClass("alert-danger");
+                            $("#alertaLogin span").html("Contraseña incorrecta");
+                        }
+                    } else {
+                        $("#alertaLogin").removeClass("d-none").addClass("alert-danger");
+                        $("#alertaLogin span").html("El correo no ha sido encontrado");
+                    }
+
                 }
             });
         }

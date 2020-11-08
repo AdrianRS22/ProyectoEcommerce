@@ -34,15 +34,21 @@
                                 <h3 class="mb-0">Login</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formLogin">
+                                <form class="form" role="form" autocomplete="off" id="formLogin" method="POST">
+                                    <div class="alert d-none" id="alertaLogin">
+                                        <span></span>
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="correo">Correo</label>
-                                        <input type="email" class="form-control form-control-lg rounded-0" id="correo_login" name="correo">
+                                        <input type="email" class="form-control form-control-lg rounded-0"
+                                            id="correo_login" name="correo">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="clave">Contraseña</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" id="clave_login" name="clave">
+                                        <input type="password" class="form-control form-control-lg rounded-0"
+                                            id="clave_login" name="clave">
                                     </div>
 
                                     <div>
@@ -55,7 +61,8 @@
                                                 class="forgot-form-link">Olvidé mi contraseña</a>
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                    <button type="submit" class="btn btn-success btn-lg float-right"
+                                        id="btnLogin">Login</button>
                                 </form>
                             </div>
                         </div>
@@ -65,34 +72,37 @@
                         <!-- form card register -->
                         <div class="card rounded-0" id="register-form">
                             <div class="card-header">
-                                <h3 class="mb-0">New Account</h3>
+                                <h3 class="mb-0">Registrarse</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
-                                    method="POST">
+                                <form class="form" role="form" id="formRegistro" method="POST">
+
+                                    <div class="alert d-none" id="alertaRegistro">
+                                        <span></span>
+                                    </div>
 
                                     <div class="form-group">
                                         <label>Correo</label>
-                                        <input type="email" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="" autocomplete="new-password">
+                                        <input type="email" class="form-control form-control-lg rounded-0"
+                                            id="correo_registro" name="correo">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="uname1">Nombre</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
-                                            id="uname1" required="">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0"
+                                            id="nombre_registro" name="nombre">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="uname1">Apellidos</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="uname1"
-                                            id="uname1" required="">
+                                        <label for="apellidos">Apellidos</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0"
+                                            id="apellidos_registro" name="apellidos">
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Contraseña</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="" autocomplete="new-password">
+                                        <label for="clave">Contraseña</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0"
+                                            id="clave_registro" name="clave">
                                     </div>
 
                                     <div>
@@ -102,8 +112,7 @@
                                         </label>
                                     </div>
 
-                                    <button type="submit" class="btn btn-success btn-lg float-right"
-                                        id="btnLogin">Registrar</button>
+                                    <button type="submit" class="btn btn-success btn-lg float-right">Registrar</button>
                                 </form>
                             </div>
                         </div>
@@ -116,13 +125,11 @@
                                 <h3 class="mb-0">Resetear contraseña</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate=""
-                                    method="POST">
+                                <form class="form" role="form" autocomplete="off" id="formResetearPassword">
                                     <div class="form-group">
-                                        <label>Correo</label>
-                                        <input type="email" class="form-control form-control-lg rounded-0" id="pwd1"
-                                            required="" autocomplete="new-password">
-
+                                        <label for="correo">Correo</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0"
+                                            id="resetear_correo" name="correo">
                                     </div>
                                     <div>
                                         <label class="custom-control custom-checkbox">
@@ -146,8 +153,10 @@
         </div>
     </div>
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/parsley.min.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/pages/login.js"></script>
 </body>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/parsley.min.js"></script>
+<script src="/assets/js/parsley_form_conf.js"></script>
+<script src="/assets/js/pages/login.js"></script>
+<script src="/assets/js/pages/registro.js"></script>
