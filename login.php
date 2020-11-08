@@ -158,5 +158,5 @@
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/js/parsley.min.js"></script>
 <script src="/assets/js/parsley_form_conf.js"></script>
-<script src="/assets/js/pages/login.js"></script>
-<script src="/assets/js/pages/registro.js"></script>
+<script src="/assets/js/pages/login.js?v=<?php echo date('his'); ?>"></script>
+<script src="/assets/js/pages/registro.js?v=<?php echo date('his'); ?>"></script>

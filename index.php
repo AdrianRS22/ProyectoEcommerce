@@ -152,3 +152,8 @@
 </div>
 
 <?php require_once 'shared/footer.php'; ?>
+
+
+</body>
+
+</html>
