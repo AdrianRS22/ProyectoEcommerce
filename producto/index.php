@@ -12,24 +12,18 @@
 
 
 <section id="detalle_producto" class="container_sombreado">
-    <h3 class="text-center colorMarino" id="nombreProducto">Nombre del producto</h3>
+    <h3 class="text-center colorMarino" id="nombreProducto"></h3>
     <hr>
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-2 producto">
-            <img src="https://blazetv.es/wp-content/uploads/2018/12/PantanosPortada.png" alt="Producto" />
+            <img alt="Producto" id="imagenProducto"/>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-4">
             <h3 class="text-center colorDarkBlue">Descripción</h3>
 
-            <p class="text-justify" id="descripcionProducto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga error! Recusandae commodi adipisci
-                corrupti maiores? Impedit nostrum sit consequatur, iste et ut quod, ratione consequuntur corrupti sequi
-                a blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore asperiores,
-                reiciendis laborum
-                voluptates nihil blanditiis fugiat non velit corrupti iure molestiae vel eligendi debitis eius unde
-                ratione numquam dolores
-            </p>
+            <p class="text-justify" id="descripcionProducto"></p>
 
-            <p id="precioProducto">Precio: 5000 colones</p>
+            <p id="precioProducto"></p>
 
             <button class="btn btn-primary">Comprar</button>
         </div>
