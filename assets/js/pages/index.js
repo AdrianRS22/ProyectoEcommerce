@@ -2,6 +2,10 @@ $(document).ready(function () {
 
     obtenerCategorias();
 
+    $(document).on('click', '#menu-categorias > li > ul > li', function (e) {
+        e.stopPropagation();
+    });
+
 });
 
 function obtenerCategorias() {
@@ -22,7 +26,7 @@ function obtenerCategorias() {
                     var li_string = `<li data-toggle='collapse' data-target='#${data_target}'>`;
                     li_string += `<a href="#">${categoria.nombre}</a>`;
 
-                    var ul_string = `<ul class="sub-menu collapse show" id='${data_target}'>`;
+                    var ul_string = `<ul class="sub-menu collapse" id='${data_target}'>`;
                     $.each(categoria.sub_categorias, function () {
                         var sub_categoria = this;
                         ul_string += `<li><a href='#'>${sub_categoria.nombre}</a></li>`;
