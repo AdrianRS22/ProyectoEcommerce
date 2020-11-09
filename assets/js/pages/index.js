@@ -5,32 +5,42 @@ $(document).ready(function () {
 
     $(document).on('click', '#menu-categorias > li > ul > li', function (e) {
         e.stopPropagation();
+        var subcategoria_id = $(this).val();
+        obtenerProductosPorCategoria(subcategoria_id);
     });
 
 });
 
-function obtenerProductos(producto_id = 0){
+function obtenerProductos(producto_id = 0) {
 
     $.ajax({
         type: "GET",
         url: "/scripts/obtener_producto.php",
-		data: { producto_id: producto_id },
+        data: { producto_id: producto_id },
+        success: function (response) {
+            let productos = $.parseJSON(response);
+            var contenido_productos = obtenerContenidoProductos(productos);
+            $("#contenido-productos").html(contenido_productos);
+        }
+    });
+}
+
+function obtenerProductosPorCategoria(categoriaId) {
+    $.ajax({
+        type: "GET",
+        url: "/scripts/obtenerProductosPorCategoria.php",
+        data: { categoria_id: categoriaId },
         success: function (response) {
             let productos = $.parseJSON(response);
 
-            var contenido_articulos = ``;
-            $.each(productos, function () { 
-                 var producto = this;
-                 contenido_articulos += `<article class="producto">
-                 <div class="image-wrap">
-                     <img src="${producto.imagen}" alt="Producto">
-                 </div>
-                 <div class="productdetails_button">
-                     <a href="/producto/?id=${producto.id}" class="btn btn-primary">Ver detalles</a>
-                 </div>
-                </article>`;
-            });
-            $("#contenido-productos").append(contenido_articulos);
+            if(productos.length > 0){
+                var contenido_productos = obtenerContenidoProductos(productos);
+            }else{
+                var contenido_productos = `<div class='mx-auto'>
+                    No se ha encontrado ningun producto asociado a esta categoria
+                </div>`;
+            }
+            $("#contenido-productos").html(contenido_productos);
         }
     });
 }
@@ -56,7 +66,7 @@ function obtenerCategorias() {
                     var ul_string = `<ul class="sub-menu collapse" id='${data_target}'>`;
                     $.each(categoria.sub_categorias, function () {
                         var sub_categoria = this;
-                        ul_string += `<li><a href='#'>${sub_categoria.nombre}</a></li>`;
+                        ul_string += `<li value='${sub_categoria.id}'><a href='#'>${sub_categoria.nombre}</a></li>`;
                     });
                     ul_string += `</ul>`;
 
@@ -67,4 +77,20 @@ function obtenerCategorias() {
             });
         }
     });
+}
+
+function obtenerContenidoProductos(productos) {
+    var contenido_productos = ``;
+    $.each(productos, function () {
+        var producto = this;
+        contenido_productos += `<article class="producto">
+         <div class="image-wrap">
+             <img src="${producto.imagen}" alt="Producto">
+         </div>
+         <div class="productdetails_button">
+             <a href="/producto/?id=${producto.id}" class="btn btn-primary">Ver detalles</a>
+         </div>
+        </article>`;
+    });
+    return contenido_productos;
 }
