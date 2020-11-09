@@ -29,7 +29,6 @@
 </section>
 
 <?php require_once '../shared/footer.php'; ?>
-<script src="/assets/js/index.js?v=<?php echo date('his'); ?>"></script>
 
 </body>
 

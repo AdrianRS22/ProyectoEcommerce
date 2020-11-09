@@ -8,7 +8,7 @@ try {
         $usuario = [];
 
         $consulta = 'call obtener_usuario(?)';
-        $stmt = $db->prepare($consulta);
+        $stmt = $db->prepare($consulta) or trigger_error($db->error, E_USER_ERROR);
 
         $stmt->bind_param("s", $_POST["correo"]);
         $stmt->execute();

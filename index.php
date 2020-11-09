@@ -152,7 +152,7 @@
 </div>
 
 <?php require_once 'shared/footer.php'; ?>
-
+<script src="/assets/js/pages/index.js?v=<?php echo date('his'); ?>"></script>
 
 </body>
 
