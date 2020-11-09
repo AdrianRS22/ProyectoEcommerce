@@ -19,7 +19,7 @@ function obtenerProductoPorId (producto_id){
 				//document.getElementById("nombreProducto").innerHTML = producto.nombre;
 				$("#nombreProducto").html(producto.nombre);
 				$("#descripcionProducto").html(producto.descripcion);
-				$("#precioproducto").html(producto.precio + " colones");
+				$("#precioProducto").html(producto.precio + " colones");
 			}
 		}
 	});
