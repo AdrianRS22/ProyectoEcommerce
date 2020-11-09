@@ -10,7 +10,7 @@
 
                 <div class="categories-menu">
                     <ul id="menu-categorias" class="menu-content collapse show">
-                    
+                    <!--
                         <li data-toggle="collapse" data-target="#clothing">
                             <a href="#">clothing</a>
                             <ul class="sub-menu collapse show" id="clothing">
@@ -62,6 +62,8 @@
                             </ul>
                         </li>
                     </ul>
+
+                    -->
                 </div>
             </aside>
 
