@@ -1,6 +1,4 @@
 <?php
-    /* Los includes y requires tambien pueden ser utilizados en el html para no repetir codigo compartido en todas las paginas */
-    /* Asi solo colocamos los scripts y las hojas de estilos en un solo lugar */
     require_once 'shared/header.php';
 ?>
 
@@ -11,7 +9,8 @@
                 <h6 class="widget-title pt-2 mb-30 text-center colorMarino">Categorías</h6>
 
                 <div class="categories-menu">
-                    <ul id="menu-content2" class="menu-content collapse show">
+                    <ul id="menu-categorias" class="menu-content collapse show">
+                    
                         <li data-toggle="collapse" data-target="#clothing">
                             <a href="#">clothing</a>
                             <ul class="sub-menu collapse show" id="clothing">
