@@ -23,7 +23,7 @@
         <div class="row">
             <div class="imglogin col-md-12">
                 <div class="imglogin col-md-12 text-center mb-5">
-                    <img class="img-fluid mx-auto imagen_login" style="width: 400px;height: auto;"
+                    <img class="img-fluid mx-auto imagen_login"
                         src="assets/img/arenalmarket.png">
                 </div>
                 <div class="row">
