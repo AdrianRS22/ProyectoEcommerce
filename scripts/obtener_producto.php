@@ -13,8 +13,12 @@ try {
         $stmt->execute();
         $result = $stmt->get_result();
 
-        while ($row = $result->fetch_assoc()) {
-        	$producto = $row;
+        if($result->num_rows > 1){
+            while ($row = $result->fetch_assoc()) {
+                array_push($producto, $row);
+            }
+        }else if($result->num_rows == 1){
+            $producto = $row = $result->fetch_assoc();
         }
         $stmt->close();
 	}

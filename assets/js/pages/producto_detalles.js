@@ -16,10 +16,10 @@ function obtenerProductoPorId (producto_id){
 			if(producto.length != undefined){
 				window.location.href ="/index.php";
 			}else{
-				//document.getElementById("nombreProducto").innerHTML = producto.nombre;
 				$("#nombreProducto").html(producto.nombre);
+				document.getElementById("imagenProducto").src = producto.imagen;
 				$("#descripcionProducto").html(producto.descripcion);
-				$("#precioproducto").html(producto.precio + " colones");
+				$("#precioProducto").html(producto.precio + " colones");
 			}
 		}
 	});

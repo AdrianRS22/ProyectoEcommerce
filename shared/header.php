@@ -38,6 +38,10 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
+
+                        <?php if (isset($_SESSION['usuario'])): ?>
+
+                        <?php if($_SESSION['usuario']['rol_id'] == 2):?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="AdminDropDown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,7 +53,8 @@
                                 <a class="dropdown-item" href="#">Reportes</a>
                             </div>
                         </li>
-                        <?php if (isset($_SESSION['usuario'])): ?>
+                        <?php endif; ?>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="UsuarioDropDown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
