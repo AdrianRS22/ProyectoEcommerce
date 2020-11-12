@@ -10,7 +10,7 @@
 		<table class="table">
 			<thead class="thead-dark">
 				<tr>
-					<th scope="col">ID</th>
+					<th scope="col">id</th>
 					<th scope="col">Nombre</th>
 					<th scope="col">Subcategorias</th>
 					<th scope="col">Accion</th>
@@ -19,7 +19,7 @@
 			<tbody>
 				<tr>
 					<th scope="row">1</th>
-					<td>Mark</td>
+					<td id="primeraFila"></td>
 					<td>Otto</td>
 					<td><div class="dropdown show">
 						<a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
@@ -35,7 +35,7 @@
 			</tr>
 			<tr>
 				<th scope="row">2</th>
-				<td>Jacob</td>
+				<td id="SegundaFila"></td>
 				<td>Thornton</td>
 				<td><div class="dropdown show">
 					<a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
@@ -69,7 +69,7 @@
 </div>
 
 <?php require_once '../../shared/footer.php'; ?>
-<script src="/assets/js/pages/index.js?v=<?php echo date('his'); ?>"></script>
+<script type="text/javascript" src="../../assets/js/pages/administrar_categorias.js" ></script>
 
 </body>
 

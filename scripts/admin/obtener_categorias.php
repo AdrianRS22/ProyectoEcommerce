@@ -12,6 +12,7 @@ try {
     $stmt->execute();
     $result = $stmt->get_result();
 
+
     while ($row = $result->fetch_assoc()) {
         if($row['parent_id'] > 0){
             array_push($subcategorias, $row);
@@ -32,7 +33,8 @@ try {
         $categorias[$key] = $categoria;
     }
     array_push($resultado, $categorias);
-    echo json_encode($resultado);
+    $resultado = json_encode($resultado);
+    echo ($resultado);
 } catch (\Throwable $th) {
     echo json_encode($resultado);
 }
