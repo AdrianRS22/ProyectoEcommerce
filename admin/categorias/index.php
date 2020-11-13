@@ -69,7 +69,7 @@
 </div>
 
 <?php require_once '../../shared/footer.php'; ?>
-<script type="text/javascript" src="../../assets/js/pages/administrar_categorias.js" ></script>
+<script type="text/javascript" src="../../assets/js/pages/admin/administrar_categorias.js" ></script>
 
 </body>
 
