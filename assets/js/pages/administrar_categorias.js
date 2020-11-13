@@ -13,11 +13,13 @@ function obtenerCategorias() {
 
             let decodedResponse = jQuery.parseJSON(response);
 
+            
+
             $.each(decodedResponse, function () {
 
-                var categoria = this;
-                    document.getElementById("primeraFila").innerHTML = categoria[0].nombre;
-                    document.getElementById("SegundaFila").innerHTML = categoria[1].nombre;
+                var categorias = this;
+                    document.getElementById("primeraFila").innerHTML = categorias.nombre;
+                    document.getElementById("SegundaFila").innerHTML = categorias.nombre;
             });
         }
     });
