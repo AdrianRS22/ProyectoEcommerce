@@ -16,7 +16,7 @@
              <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Accion</th>
+                <th scope="col">Acci&oacute;n</th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +24,7 @@
                 <th scope="row">1</th>
                 <td>Otto</td>
                 <td><div class="dropdown show">
-                    <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
+                    <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Acci&oacute;n</a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">Editar</a>
@@ -38,7 +38,7 @@
             <th scope="row">2</th>
             <td>Thornton</td>
             <td><div class="dropdown show">
-                <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
+                <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Acci&oacute;n</a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">Editar</a>
@@ -51,7 +51,7 @@
         <th scope="row">3</th>
         <td>the Bird</td>
         <td><div class="dropdown show">
-            <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
+            <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Acci&oacute;n</a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">Editar</a>
