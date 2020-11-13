@@ -20,7 +20,10 @@ try {
 
     $stmt->close();
 
-    echo json_encode($categorias);
+    $result = array(
+        "data" => $categorias
+    );
+    echo json_encode($result);
     
     //echo $categorias[0]["nombre"];
 
