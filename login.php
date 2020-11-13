@@ -58,7 +58,7 @@
                                         </label>
                                         <label class="custom-control custom-checkbox">
                                             <a href="javascript:void('forgot-form-link');"
-                                                class="forgot-form-link">Olvidé mi contraseña</a>
+                                                class="forgot-form-link">Olvid&eacute; mi contraseña</a>
                                         </label>
                                     </div>
                                     <button type="submit" class="btn btn-success btn-lg float-right"
