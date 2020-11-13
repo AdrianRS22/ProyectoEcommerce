@@ -8,8 +8,9 @@ var tablaListadoCategorias = {
     id: "#tablaListadoCategorias",
     init: function () {
         $(tablaListadoCategorias.id).DataTable({
+            responsive: true,
             searching: true,
-            paging: false,
+            paging: true,
             bInfo: true,
             order: [],
             ajax: {
@@ -31,9 +32,8 @@ var tablaListadoCategorias = {
                         return `<div class="dropdown show">
                         <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="subcategoria.php">Subcategorias</a>
-                            <a class="dropdown-item" href="#">Editar</a>
-                            <a class="dropdown-item" href="#">Eliminar</a>
+                            <a class="dropdown-item" href="subcategoria.php"><i class="las la-tag">Subcategorias</i></a>
+                            <a class="dropdown-item" href="#"><i class='las la-edit'>Editar</i></a>
                         </div>
                         </div>`;
                     }
@@ -45,28 +45,3 @@ var tablaListadoCategorias = {
         });
     }
 }
-
-
-/*
-function obtenerCategorias() {
-    $.ajax({
-        type: "GET",
-        url: "/scripts/admin/obtener_categorias.php",
-        success: function (response) {
-
-            let decodedResponse = jQuery.parseJSON(response);
-
-
-
-            $.each(decodedResponse, function () {
-
-                var categorias = this;
-                    document.getElementById("primeraFila").innerHTML = categorias.nombre;
-                    document.getElementById("SegundaFila").innerHTML = categorias.nombre;
-            });
-        }
-    });
-
-
-}
-*/
