@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/line-awesome/css/line-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/assets/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="/assets/css/responsive.dataTables.min.css">
 </head>
 
 <body>

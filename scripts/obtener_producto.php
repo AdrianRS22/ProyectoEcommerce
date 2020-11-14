@@ -18,7 +18,7 @@ try {
                 array_push($producto, $row);
             }
         }else if($result->num_rows == 1){
-            $producto = $row = $result->fetch_assoc();
+            $producto = $result->fetch_assoc();
         }
         $stmt->close();
 	}
