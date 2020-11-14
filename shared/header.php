@@ -52,7 +52,7 @@
                                 Administrar
                             </a>
                             <div class="dropdown-menu" aria-labelledby="AdminDropDown">
-                                <a class="dropdown-item" href="#">Productos</a>
+                                <a class="dropdown-item" href="/admin/productos/index.php">Productos</a>
                                 <a class="dropdown-item" href="/admin/categorias/index.php">Categorías</a>
                                 <a class="dropdown-item" href="#">Reportes</a>
                             </div>
