@@ -17,12 +17,12 @@ var tablaListadoProductos = {
             },
             columns: [
                 { data: 'id', title: "id" },
-                { data: 'categoria', title: "Categoría" },
-                { data: 'subcategoria', title: "Sub Categoría" },
                 { data: 'nombre', title: "Nombre" },
                 { data: 'descripcion', title: "Descripción" },
                 { data: 'precio', title: "Precio" },
                 { data: 'fecha', title: "Fecha Creación" },
+                { data: 'categoria', title: "Categoría" },
+                { data: 'subcategoria', title: "Sub Categoría" },
                 { data: 'id', title: "Acción" }
             ],
             columnDefs: [

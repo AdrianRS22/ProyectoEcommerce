@@ -16,6 +16,10 @@ ul li, ol li{
     list-style: none;
 }
 
+textarea {
+    resize: none;
+}
+
 body{
     background: url("../img/fondo.png");
 }
