@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue static-top">
             <div class="container">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/index.php">
                     <i class="las la-2x la-store-alt" id="logo">
                         Arenal Market
                     </i>
