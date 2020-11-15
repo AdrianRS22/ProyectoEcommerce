@@ -61,10 +61,6 @@ if(isset($_SESSION['usuario'])){
                                             <a href="javascript:void('register-form-link');"
                                                 class="register-form-link">Registrarse</a>
                                         </label>
-                                        <label class="custom-control custom-checkbox">
-                                            <a href="javascript:void('forgot-form-link');"
-                                                class="forgot-form-link">Olvid&eacute; mi contraseña</a>
-                                        </label>
                                     </div>
                                     <button type="submit" class="btn btn-success btn-lg float-right"
                                         id="btnLogin">Login</button>
@@ -122,36 +118,6 @@ if(isset($_SESSION['usuario'])){
                             </div>
                         </div>
                         <!-- /form card register end -->
-
-
-                        <!-- form card forgot -->
-                        <div class="card rounded-0" id="forgot-form">
-                            <div class="card-header">
-                                <h3 class="mb-0">Resetear contraseña</h3>
-                            </div>
-                            <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formResetearPassword">
-                                    <div class="form-group">
-                                        <label for="correo">Correo</label>
-                                        <input type="email" class="form-control form-control-lg rounded-0"
-                                            id="resetear_correo" name="correo">
-                                    </div>
-                                    <div>
-                                        <label class="custom-control custom-checkbox">
-                                            <a href="javascript:void('register-form-link');"
-                                                class="register-form-link">Registrarse</a>
-                                        </label>
-                                        <label class="custom-control custom-checkbox">
-                                            <a href="javascript:void('login-form-link');"
-                                                class="login-form-link">Loguearse</a>
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">
-                                        Resetear contraseña</button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- /form card forgot end -->
                     </div>
                 </div>
             </div>
