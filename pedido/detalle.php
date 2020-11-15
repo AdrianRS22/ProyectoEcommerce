@@ -1,17 +1,14 @@
 <?php
     require_once '../shared/header.php';
     include '../scripts/pedidos/metodos.php';
-    include '../scripts/pedidos/infoConfirmacion.php';
+    include '../scripts/pedidos/infoDetallesPedido.php';
 ?>
 
 <div class="row p-2">
     <div class="container_sombreado container">
 
-        <?php if($_SESSION['pedido'] == 'success') : ?>
-        <h1 class="text-center colorMarino" id="nombreProducto">Pedido confirmado</h1>
+        <h1 class="text-center colorMarino" id="nombreProducto">Detalles del pedido</h1>
         <hr>
-
-        <h3 class="colorDarkBlue">Datos del pedido: </h3>
 
         <?php if(isset($pedido)) : ?>
         <div class="row">
@@ -65,11 +62,6 @@
             </tbody>
         </table>
         <?php endif; ?>
-
-        <?php else: ?>
-        <h1 class="text-center colorMarino">No se pudo procesar su pedido</h1>
-        <?php endif; ?>
-
     </div>
 </div>
 
