@@ -6,7 +6,7 @@
     <div class="col-lg-3">
         <div class="widget catagory">
             <aside id="show_side_bar" class="container_sombreado">
-                <h6 class="widget-title pt-2 mb-30 text-center colorMarino">Categor&iacute;as</h6>
+                <h6 class="widget-title pt-2 mb-30 text-center colorMarino">Categorías</h6>
 
                 <div class="categories-menu">
                     <ul id="menu-categorias" class="menu-content collapse show">

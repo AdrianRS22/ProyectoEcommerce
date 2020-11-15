@@ -72,6 +72,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="UsuarioDropDown">
                                 <a class="dropdown-item" href="/perfil.php">Perfil</a>
+                                <a class="dropdown-item" href="/mispedidos.php">Mis Pedidos</a>
                                 <a class="dropdown-item" href="/logout.php">Log out</a>
                             </div>
                         </li>
