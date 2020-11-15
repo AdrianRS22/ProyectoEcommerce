@@ -1,6 +1,6 @@
 <?php
 require_once '../../shared/header.php';
-
+include '../../scripts/redireccionarNoAdmins.php';
 include '../../scripts/admin/productos/agregar_producto.php';
 
 ?>

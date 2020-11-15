@@ -1,5 +1,6 @@
 <?php
 require_once '../../shared/header.php';
+include '../../scripts/redireccionarNoAdmins.php';
 ?>
 
 <div class="row">
