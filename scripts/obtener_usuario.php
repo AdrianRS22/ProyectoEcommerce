@@ -25,6 +25,10 @@ try {
                     $usuario['nombre'] = $row['nombre'];
                     $usuario['apellidos'] = $row['apellidos'];
                     $_SESSION['usuario'] = $usuario;
+
+                    if($row['rol_id'] == 2){
+                        $_SESSION['admin'] = true;
+                    }
                 }
             }
         }

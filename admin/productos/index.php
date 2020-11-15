@@ -1,6 +1,6 @@
 <?php
 require_once '../../shared/header.php';
-include '../../scripts/redireccionarNoAdmins.php';
+Utils::isAdmin();
 ?>
 
 <div class="row">

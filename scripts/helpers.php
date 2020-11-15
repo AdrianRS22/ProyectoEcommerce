@@ -2,6 +2,14 @@
 
 class Utils{
 
+	public static function isAdmin(){
+		if(!isset($_SESSION['admin'])){
+			header("Location: /index.php");
+		}else{
+			return true;
+		}
+	}
+
 	public static function statsCarrito(){
 		$stats = array(
 			'count' => 0,
