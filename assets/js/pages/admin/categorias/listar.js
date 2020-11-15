@@ -33,7 +33,7 @@ var tablaListadoCategorias = {
                         return `<div class="dropdown show">
                         <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Accion</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="/admin/categorias/subcategoria.php"><i class="las la-tag">Subcategorias</i></a>
+                            <a class="dropdown-item" href="/admin/categorias/subcategorias.php?categoriaId=${data}"><i class="las la-tag">Subcategorias</i></a>
                             <a class="dropdown-item" href="/admin/categorias/edit.php?id=${data}"><i class='las la-edit'>Editar</i></a>
                         </div>
                         </div>`;
