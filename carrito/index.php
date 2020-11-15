@@ -45,7 +45,8 @@ if (isset($_SESSION['carrito'])) {
         <?php $stats = Utils::statsCarrito(); ?>
         <h3>Cantidad: <?= $stats['count']?></h3>
         <h3>Precio total: <?= $stats['total']?></h3>
-
+        
+        <a href="/scripts/carrito/eliminarTodo.php" class="btn btn-danger">Vaciar carrito de compra</a>
         <a href="/pedido" class="btn btn-success">Hacer pedido</a>
     </div>
 </div>
