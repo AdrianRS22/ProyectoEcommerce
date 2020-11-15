@@ -1,4 +1,7 @@
-<?php require_once 'conexion.php'; ?>
+<?php 
+    include __DIR__ . '/../scripts/helpers.php';
+    require_once 'conexion.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -42,6 +45,10 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/carrito"><i class="las la-shopping-cart">Mi carrito</i></a>
+                        </li>                        
 
                         <?php if (isset($_SESSION['usuario'])): ?>
 

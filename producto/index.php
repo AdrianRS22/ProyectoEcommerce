@@ -25,7 +25,7 @@
 
             <p id="precioProducto"></p>
 
-            <button class="btn btn-primary">Comprar</button>
+            <a class="btn btn-primary" href="/scripts/carrito/add.php?id=<?= $producto_id ?>">Comprar</a>
         </div>
     </div>
 
