@@ -10,7 +10,7 @@ require_once '../../shared/header.php';
 
         <form id="editarCategoria">
              <?php include '../templates/addEditCategoria.php'?>
-             <input type="submit" class="btn btn-primary" value="Agregar" />
+             <input type="submit" class="btn btn-primary" value="Agregar"/>
         </form>
     </div>
 </div>

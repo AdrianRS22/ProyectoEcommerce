@@ -1,0 +1,14 @@
+{
+    "name": "adrian/proyecto-ecommerce",
+    "description": "Proyecto Ecommerce",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian",
+            "email": "adrianrojasanchez@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.161"
+    }
+}

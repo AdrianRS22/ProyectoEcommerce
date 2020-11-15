@@ -6,3 +6,6 @@ config/*
 
 # Ignorar el archivo composer.lock
 composer.lock
+
+# Ignorar directorio temp
+temp/*
