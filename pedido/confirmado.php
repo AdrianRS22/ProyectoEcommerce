@@ -8,10 +8,8 @@
     <div class="container_sombreado container">
 
         <?php if($_SESSION['pedido'] == 'success') : ?>
-        <h1 class="text-center colorMarino" id="nombreProducto">Pedido confirmado</h1>
+        <h3 class="text-center colorMarino" id="nombreProducto">Detalles del pedido</h3>
         <hr>
-
-        <h3 class="colorDarkBlue">Datos del pedido: </h3>
 
         <?php if(isset($pedido)) : ?>
         <div class="row">
@@ -32,7 +30,9 @@
             </div>
         </div>
         <?php endif;  ?>
-
+        <hr>
+        <h3 class="text-center colorMarino" id="nombreProducto">Productos comprados</h3>
+        <hr>
         <?php if(isset($productos)) :?>
         <table class="table" id="confirmacionPedido">
             <thead class="thead-dark">
@@ -69,7 +69,7 @@
         <?php else: ?>
         <h1 class="text-center colorMarino">No se pudo procesar su pedido</h1>
         <?php endif; ?>
-
+        <hr>
     </div>
 </div>
 
