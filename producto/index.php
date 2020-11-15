@@ -19,8 +19,7 @@
             <img alt="Producto" id="imagenProducto"/>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-4">
-            <h3 class="text-center colorDarkBlue">Descripci&oacute;n</h3>
-
+            <h3 class="text-center colorDarkBlue">Descripción</h3>
             <p class="text-justify" id="descripcionProducto"></p>
 
             <p id="precioProducto"></p>

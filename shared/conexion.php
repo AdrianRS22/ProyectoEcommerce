@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/../scripts/helpers.php';
 include __DIR__ . '/../config/config.php';
 
 use Aws\S3\S3Client;

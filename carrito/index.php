@@ -8,8 +8,8 @@ if (isset($_SESSION['carrito'])) {
 
 ?>
 
-<div class="row">
-    <div class="container_sombreado table-responsive">
+<div class="row p-2">
+    <div class="container_sombreado container">
         <h1 class="text-center colorMarino"> Carrito de compra</h1>
         <hr>
 
@@ -21,7 +21,7 @@ if (isset($_SESSION['carrito'])) {
                 <th>Unidades</th>
             </thead>
             <tbody>
-                <?php foreach($carrito as $indice => $producto) : ?>
+                <?php foreach($carrito as $producto) : ?>
                 <tr>
                     <td>
                         <div class="producto image-wrap">
@@ -46,7 +46,7 @@ if (isset($_SESSION['carrito'])) {
         <h3>Cantidad: <?= $stats['count']?></h3>
         <h3>Precio total: <?= $stats['total']?></h3>
 
-        <a href="" class="btn btn-success">Hacer pedido</a>
+        <a href="/pedido" class="btn btn-success">Hacer pedido</a>
     </div>
 </div>
 

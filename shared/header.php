@@ -1,5 +1,4 @@
 <?php 
-    include __DIR__ . '/../scripts/helpers.php';
     require_once 'conexion.php'; 
 ?>
 
