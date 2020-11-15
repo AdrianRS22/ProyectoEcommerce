@@ -14,7 +14,7 @@ try {
 
     while ($row = $result->fetch_assoc()) {
 
-        if ($row['activo'] == 0) {
+        if ($row['activo'] == 1) {
             if ($row['parent_id'] > 0) {
                 array_push($subcategorias, $row);
             } else {

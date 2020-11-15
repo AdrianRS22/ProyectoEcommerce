@@ -11,7 +11,7 @@ try {
     $result = $stmt->get_result();
 
     while ($row = $result->fetch_assoc()) {
-        $row['estado'] = $row['activo'] == 0 ? "Activo" : "Inactivo";
+        $row['estado'] = $row['activo'] == 1 ? "Activo" : "Inactivo";
         array_push($categorias, $row);
     }
 

@@ -30,8 +30,8 @@ if(isset($_GET['id']) ){
 
                 <div class="col-9 col-sm-10">
                     <select name="estado" id="estadoCategoria" class="form-control">
-                        <option value="0">Activo</option>
-                        <option value="1">Inactivo</option>
+                        <option value="0">Inactivo</option>
+                        <option value="1">Activo</option>
                     </select>
                 </div>
                 
