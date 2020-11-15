@@ -45,5 +45,5 @@
 
 <div class="form-group">
     <label for="imagen">Imagen: </label>
-    <input type="file" name="imagen" class="form-control-file" id="imagenProducto" />
+    <input type="file" name="imagen" class="form-control-file" id="imagenProducto" accept="image/*"/>
 </div>
