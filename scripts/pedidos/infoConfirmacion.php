@@ -1,12 +1,10 @@
 <?php
 
+Utils::IsLoginSet();
+
 try {
-    if (isset($_SESSION['usuario'])) {
-        $pedido = obtenerPedidoDetallesConfirmado($db, $_SESSION['usuario']['id']);
-        $productos = obtenerProductosPorPedido($db, $pedido->id);
-    }else{
-        header("Location: /index.php");
-    }
+    $pedido = obtenerPedidoDetallesConfirmado($db, $_SESSION['usuario']['id']);
+    $productos = obtenerProductosPorPedido($db, $pedido->id);
 } catch (\Throwable $th) {
     //throw $th;
 }
