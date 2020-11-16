@@ -24,6 +24,7 @@ try {
                     $usuario['rol_id'] = $row['rol_id'];
                     $usuario['nombre'] = $row['nombre'];
                     $usuario['apellidos'] = $row['apellidos'];
+                    $usuario['correo'] = $row['correo'];
                     $_SESSION['usuario'] = $usuario;
 
                     if($row['rol_id'] == 2){
