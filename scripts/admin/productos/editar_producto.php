@@ -40,8 +40,7 @@ if (isset($_POST['submit'])) {
         $stmt = $db->prepare($consulta) or trigger_error($db->error, E_USER_ERROR);
         $stmt->bind_param("iissd", $_POST['id'], $_POST['subcategoria'], $_POST['nombre'], $_POST['descripcion'], $_POST['precio']);
         $stmt->execute();
-
-        var_dump($stmt);
+        
         if ($stmt->affected_rows < 0) {
             throw new Exception($stmt->errno);
         }
