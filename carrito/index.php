@@ -19,9 +19,10 @@ if (isset($_SESSION['carrito'])) {
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Unidades</th>
+                <th>Eliminar</th>
             </thead>
             <tbody>
-                <?php foreach($carrito as $producto) : ?>
+                <?php foreach($carrito as $indice => $producto) : ?>
                 <tr>
                     <td>
                         <div class="producto image-wrap">
@@ -34,8 +35,13 @@ if (isset($_SESSION['carrito'])) {
                     <td>
                         <?= $producto['precio'] ?>
                     </td>
-                    <td>
+                    <td class="text-center">
+                        <a href="/scripts/carrito/unidades/incrementar.php?indice=<?= $indice ?>" class="btn btn-sm btn-info">+</a>
                         <?= $producto['unidades'] ?>
+                        <a href="/scripts/carrito/unidades/disminuir.php?indice=<?= $indice ?>" class="btn btn-sm btn-info">-</a>
+                    </td>
+                    <td class="text-center">
+                        <a href="/scripts/carrito/eliminar.php?indice=<?= $indice ?>" class="btn btn-danger">Quitar producto</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -45,7 +51,8 @@ if (isset($_SESSION['carrito'])) {
         <?php $stats = Utils::statsCarrito(); ?>
         <h3>Cantidad: <?= $stats['count']?></h3>
         <h3>Precio total: <?= $stats['total']?></h3>
-
+        
+        <a href="/scripts/carrito/eliminarTodo.php" class="btn btn-danger">Vaciar carrito de compra</a>
         <a href="/pedido" class="btn btn-success">Hacer pedido</a>
     </div>
 </div>

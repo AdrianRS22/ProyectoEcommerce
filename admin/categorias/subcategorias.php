@@ -1,7 +1,7 @@
 <?php
     require_once '../../shared/header.php';
 
-    include '../../scripts/redireccionarNoAdmins.php';
+    Utils::isAdmin();
 
     $id = 0;
 
@@ -17,7 +17,9 @@
     <div class="container_sombreado table-responsive">
         <h1 class="text-center colorMarino">Administrar Subcategorias</h1>
         <hr>
+
         <p>Categoria: <span id="nombreCategoriaPrincipal"></span></p>
+        <a class="btn btn-success text-white mb-3" href="/admin/subcategorias/add.php?idCategoria=<?= $id ?>">Agregar SubCategoría</a>
         <table class="table" id="tablaListadoSubCategorias">
             <thead class="thead-dark">
             

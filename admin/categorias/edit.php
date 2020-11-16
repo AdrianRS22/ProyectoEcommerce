@@ -1,6 +1,6 @@
 <?php
 require_once '../../shared/header.php';
-include '../../scripts/redireccionarNoAdmins.php';
+Utils::isAdmin();
 $id = 0;
 
 if(isset($_GET['id']) ){

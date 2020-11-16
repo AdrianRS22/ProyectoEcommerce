@@ -1,17 +1,56 @@
 <?php
     require_once '../shared/header.php';
     include '../scripts/pedidos/metodos.php';
-    include '../scripts/pedidos/infoConfirmacion.php';
+    include '../scripts/pedidos/infoDetallesPedido.php';
 ?>
 
 <div class="row p-2">
     <div class="container_sombreado container">
 
-        <?php if($_SESSION['pedido'] == 'success') : ?>
+        <?php if(isset($pedido)) : ?>
+        <h3 class="text-center colorMarino" id="nombreProducto">Detalles del envío</h3>
+        <hr>
+
+        <div class="row">
+            <div class="col-6">
+                <label>Provincia: </label>
+            </div>
+            <div class="col-6">
+                <span><?= $pedido->provincia ?></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label>Cantón: </label>
+            </div>
+            <div class="col-6">
+                <span><?= $pedido->canton ?></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label>Dirección: </label>
+            </div>
+            <div class="col-6">
+                <span><?= $pedido->direccion ?></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label>Costo: </label>
+            </div>
+            <div class="col-6">
+                <span><?= $pedido->direccion ?></span>
+            </div>
+        </div>
+
         <h3 class="text-center colorMarino" id="nombreProducto">Detalles del pedido</h3>
         <hr>
 
-        <?php if(isset($pedido)) : ?>
+
         <div class="row">
             <div class="col-6">
                 <label>Número de pedido:</label>
@@ -30,9 +69,11 @@
             </div>
         </div>
         <?php endif;  ?>
+        
         <hr>
         <h3 class="text-center colorMarino" id="nombreProducto">Productos comprados</h3>
         <hr>
+
         <?php if(isset($productos)) :?>
         <table class="table" id="confirmacionPedido">
             <thead class="thead-dark">
@@ -64,10 +105,6 @@
                 <?php endwhile; ?>
             </tbody>
         </table>
-        <?php endif; ?>
-
-        <?php else: ?>
-        <h1 class="text-center colorMarino">No se pudo procesar su pedido</h1>
         <?php endif; ?>
         <hr>
     </div>

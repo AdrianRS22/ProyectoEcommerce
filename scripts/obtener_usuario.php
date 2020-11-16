@@ -27,6 +27,9 @@ try {
                     $usuario['correo'] = $row['correo'];
                     $_SESSION['usuario'] = $usuario;
 
+                    if($row['rol_id'] == 2){
+                        $_SESSION['admin'] = true;
+                    }
                 }
             }
         }

@@ -1,33 +1,31 @@
 <?php
 include __DIR__ . '/../../shared/conexion.php';
 
-if (isset($_SESSION['usuario'])) {
-    try {
-        if (isset($_POST)) {
+Utils::IsLoginSet();
 
-            $stats = Utils::statsCarrito();
-            $agregarPedido = agregarPedido($db, $stats);
+try {
+    if (isset($_POST)) {
 
-            if (!$agregarPedido) {
-                throw new Exception("Error al agregar pedido");
-            }
+        $stats = Utils::statsCarrito();
+        $agregarPedido = agregarPedido($db, $stats);
 
-            $agregarLineaPedidos = agregarLineaPedidos($db);
-            if (!$agregarLineaPedidos) {
-                throw new Exception("Error al agregar linea pedidos");
-            }
-        } else {
-            $_SESSION['pedido'] = "failed";
+        if (!$agregarPedido) {
+            throw new Exception("Error al agregar pedido");
         }
 
-        $_SESSION['pedido'] = "success";
-        
-        header("Location: /pedido/confirmado.php");
-    } catch (\Throwable $th) {
+        $agregarLineaPedidos = agregarLineaPedidos($db);
+        if (!$agregarLineaPedidos) {
+            throw new Exception("Error al agregar linea pedidos");
+        }
+    } else {
         $_SESSION['pedido'] = "failed";
-        header("Location: /index.php");
     }
-} else {
+
+    $_SESSION['pedido'] = "success";
+
+    header("Location: /pedido/confirmado.php");
+} catch (\Throwable $th) {
+    $_SESSION['pedido'] = "failed";
     header("Location: /index.php");
 }
 
@@ -69,4 +67,3 @@ function agregarLineaPedidos($db)
 
     return $resultado;
 }
-
