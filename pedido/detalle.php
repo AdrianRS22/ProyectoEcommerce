@@ -43,7 +43,7 @@
                 <label>Costo: </label>
             </div>
             <div class="col-6">
-                <span><?= $pedido->direccion ?></span>
+                <span>₡ <?= $pedido->costo ?></span>
             </div>
         </div>
 
