@@ -1,8 +1,8 @@
-<div class="form-group row">
-    <div class="col-3 col-sm-2">
+<div class="form-group">
+    <div class="col-3">
         <label for="nombre">Nombre: </label>
     </div>
-    <div class="col-9 col-sm-10">
+    <div class="col-12">
         <input type="text" class="form-control" name="nombre" id="nombreCategoria" />
     </div>
 </div>

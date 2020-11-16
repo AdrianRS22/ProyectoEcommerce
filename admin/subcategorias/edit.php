@@ -20,31 +20,29 @@ if(isset($_GET['id']) ){
 
             <input type="hidden" name="id" id="idCategoria" value="<?= $id ?>">
 
-            <div class="form-group row">
-                <div class="col-3 col-sm-2">
+            <div class="form-group">
+                <div class="col-3">
                     <label for="categoria">Categoría: </label>
                 </div>
 
-                <div class="col-9 col-sm-10">
+                <div class="col-12">
                     <select name="categoria" id="categoriaSubCategoria" class="form-control"></select>
                 </div>
             </div>
 
             <?php include '../templates/addEditCategoria.php'?>
 
-            <div class="form-group row">
-
-                <div class="col-3 col-sm-2">
+            <div class="form-group">
+                <div class="col-3">
                     <label for="estado">Estado: </label>
                 </div>
 
-                <div class="col-9 col-sm-10">
+                <div class="col-12">
                     <select name="estado" id="estadoCategoria" class="form-control">
                         <option value="0">Inactivo</option>
                         <option value="1">Activo</option>
                     </select>
                 </div>
-
             </div>
 
             <input type="submit" class="btn btn-primary" value="Editar" />

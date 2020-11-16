@@ -12,29 +12,29 @@
 
         <form id="hacerPedido" method="POST" action="/scripts/pedidos/add.php">
             <input type="hidden" name="usuario_id" value="<?= $_SESSION['usuario']['id'] ?>">
-            <div class="form-group row">
-                <div class="col-3 col-sm-2">
+            <div class="form-group">
+                <div class="col-3">
                     <label for="provincia">Provincia: </label>
                 </div>
-                <div class="col-9 col-sm-10">
+                <div class="col-12">
                     <input type="text" class="form-control" name="provincia" id="provinciaPedido" />
                 </div>
             </div>
 
-            <div class="form-group row">
-                <div class="col-3 col-sm-2">
+            <div class="form-group">
+                <div class="col-3">
                     <label for="canton">Cantón: </label>
                 </div>
-                <div class="col-9 col-sm-10">
+                <div class="col-12">
                     <input type="text" class="form-control" name="canton" id="cantonPedido" />
                 </div>
             </div>
 
-            <div class="form-group row">
-                <div class="col-3 col-sm-2">
+            <div class="form-group">
+                <div class="col-3">
                     <label for="direccion">Dirección: </label>
                 </div>
-                <div class="col-9 col-sm-10">
+                <div class="col-12">
                     <textarea class="form-control" name="direccion" id="direccionPedido"></textarea>
                 </div>
             </div>
