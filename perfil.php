@@ -59,7 +59,7 @@
             <label for="clave">Contraseña: </label>
           </div>
           <div class="col-12">
-            <input type="text" class="form-control" id="password1" 
+            <input type="password" class="form-control" id="password1" 
             name="clave" 
             data-parsley-minlength="6" 
             required data-parsley-required-message="La contraseña es requerida."
@@ -74,7 +74,7 @@
             <label>Repita Contraseña: </label>
           </div>
           <div class="col-12">
-            <input type="text" class="form-control" id="password2"
+            <input type="password" class="form-control" id="password2"
             data-parsley-equalto="#password1" 
             data-parsley-equalto-message="La contraseña debe ser igual" 
             data-parsley-required-message="La contra
