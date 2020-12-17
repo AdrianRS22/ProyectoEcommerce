@@ -15,7 +15,7 @@ include '../../scripts/admin/productos/editar_producto.php';
 
 <div class="row p-2">
     <div class="container_sombreado container">
-        <h3 class="text-center colorMarino">Editar producto</h3>
+        <h3 class="text-center colorMarino">Editar Producto</h3>
         <hr>
         <form id="editarProducto" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" id="idProducto" value="<?= $id ?>"/>

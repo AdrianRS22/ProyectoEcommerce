@@ -53,7 +53,7 @@
 
         <div class="row">
             <div class="col-6">
-                <label>Número de pedido:</label>
+                <label>Número de pedido: </label>
             </div>
             <div class="col-6">
                 <span><?= $pedido->id ?></span>
@@ -62,7 +62,7 @@
 
         <div class="row">
             <div class="col-6">
-                <label>Total a pagar:</label>
+                <label>Total a pagar: </label>
             </div>
             <div class="col-6">
                 <span> <?= $pedido->costo ?> colones</span>

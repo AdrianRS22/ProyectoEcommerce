@@ -42,7 +42,7 @@
             <input type="submit" name="submit" class="btn btn-primary" value="Hacer Pedido" id="botonHacerPedido" />
         </form>
         <?php else: ?>
-        <h1 class="text-center colorMarino">Necesitas estar identificado</h1>
+        <h1 class="text-center colorMarino">Necesitas estar identificado.</h1>
         <hr>
         <p>Necesitas estar logueado en la web para poder realizar un pedido.</p>
         <?php endif; ?>

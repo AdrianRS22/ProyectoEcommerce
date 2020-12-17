@@ -10,7 +10,7 @@ if (isset($_SESSION['carrito'])) {
 
 <div class="row p-2">
     <div class="container_sombreado container">
-        <h1 class="text-center colorMarino"> Carrito de compra</h1>
+        <h1 class="text-center colorMarino"> Carrito de Compra</h1>
         <hr>
 
         <table class="table" id="carritoCompra">

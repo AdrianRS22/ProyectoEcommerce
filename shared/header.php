@@ -40,13 +40,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/index.php">Home
+                            <a class="nav-link" href="/index.php">Inicio
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/carrito"><i class="las la-shopping-cart">Mi carrito</i></a>
+                            <a class="nav-link" href="/carrito"><i class="las la-shopping-cart">Mi Carrito</i></a>
                         </li>                        
 
                         <?php if (isset($_SESSION['usuario'])): ?>
@@ -72,7 +72,7 @@
                             <div class="dropdown-menu" aria-labelledby="UsuarioDropDown">
                                 <a class="dropdown-item" href="/perfil.php">Perfil</a>
                                 <a class="dropdown-item" href="/mispedidos.php">Mis Pedidos</a>
-                                <a class="dropdown-item" href="/logout.php">Log out</a>
+                                <a class="dropdown-item" href="/logout.php">Cerrar Sesión</a>
                             </div>
                         </li>
                         <?php else: ?>

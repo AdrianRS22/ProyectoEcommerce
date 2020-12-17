@@ -14,7 +14,7 @@ if(isset($_GET['idCategoria']) ){
 <div class="row p-2">
 
     <div class="container_sombreado container">
-        <h3 class="text-center colorMarino">Añadir subcategoría</h3>
+        <h3 class="text-center colorMarino">Agregar Subcategoría</h3>
         <hr>
 
         <form id="addSubCategoria">
@@ -23,7 +23,7 @@ if(isset($_GET['idCategoria']) ){
 
             <?php include '../templates/addEditCategoria.php'?>
 
-            <input type="submit" class="btn btn-primary" value="Editar" />
+            <input type="submit" class="btn btn-primary" value="Agregar" />
         </form>
     </div>
 </div>

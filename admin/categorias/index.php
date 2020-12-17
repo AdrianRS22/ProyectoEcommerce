@@ -7,7 +7,7 @@ Utils::isAdmin();
 
 <div class="row p-2">
     <div class="container_sombreado table-responsive">
-        <h1 class="text-center colorMarino">Administrar Categorias</h1>
+        <h1 class="text-center colorMarino">Administrar Categorías</h1>
         <hr>
         <a class="btn btn-success text-white mb-3" href="/admin/categorias/add.php">Agregar Categoría</a>
         <table class="table" id="tablaListadoCategorias">

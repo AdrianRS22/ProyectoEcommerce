@@ -7,7 +7,7 @@ include '../../scripts/admin/productos/agregar_producto.php';
 
 <div class="row p-2">
     <div class="container_sombreado container">
-        <h3 class="text-center colorMarino">Agregar producto</h3>
+        <h3 class="text-center colorMarino">Agregar Producto</h3>
         <hr>
         <form id="agregarProducto" method="POST" enctype="multipart/form-data">
             <?php include '../templates/addEditProducto.php'?>

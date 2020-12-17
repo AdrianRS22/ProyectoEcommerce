@@ -36,7 +36,7 @@
 
 <div class="form-group">
     <div class="col-3">
-        <label for="subcategoria">Sub categoría: </label>
+        <label for="subcategoria">Subcategoría: </label>
     </div>
     <div class="col-12">
         <select name="subcategoria" class="form-control" id="subcategoriaProducto"></select>

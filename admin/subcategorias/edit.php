@@ -13,7 +13,7 @@ if(isset($_GET['id']) ){
 <div class="row p-2">
 
     <div class="container_sombreado container">
-        <h3 class="text-center colorMarino">Editar subcategoría</h3>
+        <h3 class="text-center colorMarino">Editar Subcategoría</h3>
         <hr>
 
         <form id="editarSubCategoria">
@@ -39,8 +39,8 @@ if(isset($_GET['id']) ){
 
                 <div class="col-12">
                     <select name="estado" id="estadoCategoria" class="form-control">
-                        <option value="0">Inactivo</option>
-                        <option value="1">Activo</option>
+                        <option value="0">Inactiva</option>
+                        <option value="1">Activa</option>
                     </select>
                 </div>
             </div>

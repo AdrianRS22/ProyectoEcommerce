@@ -6,7 +6,7 @@ Utils::isAdmin();
 
 <div class="row p-2">
     <div class="container_sombreado container">
-        <h3 class="text-center colorMarino">Agregar categoría</h3>
+        <h3 class="text-center colorMarino">Agregar Categoría</h3>
         <hr>
 
         <form id="editarCategoria">

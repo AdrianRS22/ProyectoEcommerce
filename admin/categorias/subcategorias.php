@@ -15,11 +15,11 @@
 <div class="row">
 
     <div class="container_sombreado table-responsive">
-        <h1 class="text-center colorMarino">Administrar Subcategorias</h1>
+        <h1 class="text-center colorMarino">Administrar Subcategorías</h1>
         <hr>
 
-        <p>Categoria: <span id="nombreCategoriaPrincipal"></span></p>
-        <a class="btn btn-success text-white mb-3" href="/admin/subcategorias/add.php?idCategoria=<?= $id ?>">Agregar SubCategoría</a>
+        <p>Categoría: <span id="nombreCategoriaPrincipal"></span></p>
+        <a class="btn btn-success text-white mb-3" href="/admin/subcategorias/add.php?idCategoria=<?= $id ?>">Agregar Subcategoría</a>
         <table class="table" id="tablaListadoSubCategorias">
             <thead class="thead-dark">
             

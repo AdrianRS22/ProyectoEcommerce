@@ -8,7 +8,7 @@
     <div class="container_sombreado container">
 
         <?php if($_SESSION['pedido'] == 'success') : ?>
-        <h3 class="text-center colorMarino" id="nombreProducto">Detalles del pedido</h3>
+        <h3 class="text-center colorMarino" id="nombreProducto">Detalles del Pedido</h3>
         <hr>
 
         <?php if(isset($pedido)) : ?>
@@ -67,7 +67,7 @@
         <?php endif; ?>
 
         <?php else: ?>
-        <h1 class="text-center colorMarino">No se pudo procesar su pedido</h1>
+        <h1 class="text-center colorMarino">No se pudo procesar su pedido.</h1>
         <?php endif; ?>
         <hr>
     </div>

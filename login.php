@@ -12,7 +12,7 @@ if(isset($_SESSION['usuario'])){
 
 <head>
     <meta charset="UTF-8">
-    <title>Login Arenal Market</title>
+    <title>Inicio Sesión Arenal Market</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta name="author" content="Grupo 3 Cliente - Servidor">
@@ -63,7 +63,7 @@ if(isset($_SESSION['usuario'])){
                                         </label>
                                     </div>
                                     <button type="submit" class="btn btn-success btn-lg float-right"
-                                        id="btnLogin">Login</button>
+                                        id="btnLogin">Iniciar Sesión</button>
                                 </form>
                             </div>
                         </div>
