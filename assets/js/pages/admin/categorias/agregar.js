@@ -10,7 +10,7 @@ $(document).ready(function () {
 
         var form = $(this);
         if (form.parsley().isValid()) {
-            var datos = JSON.parse(JSON.stringify($(form).serializeArray()));
+            var datos = form.serializeArray();
 
             $.ajax({
                 type: "POST",
