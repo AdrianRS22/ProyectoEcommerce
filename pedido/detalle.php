@@ -43,7 +43,7 @@
                 <label>Costo: </label>
             </div>
             <div class="col-6">
-                <span>₡ <?= $pedido->costo ?></span>
+                <span>₡ <?= number_format($pedido->costo) ?></span>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
                         <a href="/producto/?id=<?= $producto->id ?>"><?= $producto->nombre ?></a>
                     </td>
                     <td>
-                        <?= $producto->precio ?>
+                        <?= number_format($producto->precio) ?>
                     </td>
                     <td>
                         <?= $producto->unidades ?>
