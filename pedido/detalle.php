@@ -65,7 +65,7 @@
                 <label>Total a pagar: </label>
             </div>
             <div class="col-6">
-                <span> <?= $pedido->costo ?> colones</span>
+                <span> <?= number_format($pedido->costo) ?> colones</span>
             </div>
         </div>
         <?php endif;  ?>
