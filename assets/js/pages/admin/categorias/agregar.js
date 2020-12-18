@@ -19,9 +19,10 @@ $(document).ready(function () {
                 success: function (response) {
 
                     if(response == "success"){
-                        mostrarAlerta('success', 'Categoría agregada', 'La categoría ha sido agregada').then(function() {
-                        window.location = "index.php";
-                    });
+                        mostrarAlerta('success', 'Categoría agregada', 'La categoría ha sido agregada')
+                        .then(() => {
+                            window.location.href = "/admin/categorias/index.php";
+                        });
                     }else{
                         mostrarAlerta('error', 'Error', 'Ha ocurrido un error al agregar la categoría');
                     }
