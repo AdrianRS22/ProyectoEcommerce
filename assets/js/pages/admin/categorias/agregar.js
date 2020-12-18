@@ -19,7 +19,9 @@ $(document).ready(function () {
                 success: function (response) {
 
                     if(response == "success"){
-                        mostrarAlerta('success', 'Categoría agregada', 'La categoría ha sido agregada');
+                        mostrarAlerta('success', 'Categoría agregada', 'La categoría ha sido agregada').then(function() {
+                        window.location = "index.php";
+                    });
                     }else{
                         mostrarAlerta('error', 'Error', 'Ha ocurrido un error al agregar la categoría');
                     }
